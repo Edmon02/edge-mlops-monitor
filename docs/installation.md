@@ -21,7 +21,7 @@ pip install edge-mlops-monitor
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/edge-mlops-monitor.git
+   git clone https://github.com/Edmon02/edge-mlops-monitor.git
    cd edge-mlops-monitor
    ```
 
@@ -104,7 +104,7 @@ python -c "import edge_mlops_monitor; print(f'Edge MLOps Monitor version: {edge_
 ### Getting Help
 
 If you encounter issues not covered here, please:
-1. Check the [GitHub issues](https://github.com/yourusername/edge-mlops-monitor/issues)
+1. Check the [GitHub issues](https://github.com/Edmon02/edge-mlops-monitor/issues)
 2. Submit a new issue with detailed information about your problem
 
 ## Next Steps

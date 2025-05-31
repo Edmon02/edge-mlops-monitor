@@ -28,7 +28,7 @@ pip install edge-mlops-monitor
 Or install from source:
 
 ```bash
-git clone https://github.com/yourusername/edge-mlops-monitor.git
+git clone https://github.com/Edmon02/edge-mlops-monitor.git
 cd edge-mlops-monitor
 pip install -e .
 ```

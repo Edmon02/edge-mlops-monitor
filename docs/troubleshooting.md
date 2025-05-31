@@ -228,7 +228,7 @@ python -c "from edge_mlops_monitor.config import save_default_config; save_defau
 
 If you continue to experience issues:
 
-1. Check the [GitHub issues](https://github.com/yourusername/edge-mlops-monitor/issues) for similar problems
+1. Check the [GitHub issues](https://github.com/Edmon02/edge-mlops-monitor/issues) for similar problems
 2. Submit a new issue with:
    - A description of the problem
    - Steps to reproduce
