@@ -99,10 +99,11 @@ monitor.stop()
 
 For detailed documentation, please see:
 
-- [Installation Guide](docs/installation.md)
-- [Configuration Options](docs/configuration.md)
-- [API Reference](docs/api.md)
-- [Troubleshooting](docs/troubleshooting.md)
+- [Installation Guide](https://github.com/Edmon02/edge-mlops-monitor/blob/main/docs/installation.md)
+- [Configuration Options](https://github.com/Edmon02/edge-mlops-monitor/blob/main/docs/configuration.md)
+- [API Reference](https://github.com/Edmon02/edge-mlops-monitor/blob/main/docs/api.md)
+- [Troubleshooting](https://github.com/Edmon02/edge-mlops-monitor/blob/main/docs/troubleshooting.md)
+- [Publishing Guide](https://github.com/Edmon02/edge-mlops-monitor/blob/main/docs/publishing.md)
 
 ## License
 
