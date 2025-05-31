@@ -62,13 +62,45 @@ If testing on TestPyPI was successful, upload to the real PyPI:
 python -m twine upload dist/*
 ```
 
+## Updating an Existing Package
+
+When you make changes to your library and want to publish the updates:
+
+1. <span style="color:red">**IMPORTANT**:</span> You MUST increment the version number in `pyproject.toml`. PyPI and TestPyPI do not allow re-uploading the same version, even if the code has changed.
+
+2. Follow this version update process:
+   ```bash
+   # 1. Update version in pyproject.toml from "0.1.0" to "0.1.1" (for example)
+   
+   # 2. Clean old builds
+   rm -rf dist/ build/ *.egg-info/
+   
+   # 3. Build new distribution
+   python -m build
+   
+   # 4. Upload to TestPyPI first
+   python -m twine upload --repository testpypi dist/*
+   
+   # 5. Test the new version
+   pip install --index-url https://test.pypi.org/simple/ edge-mlops-monitor --upgrade
+   
+   # 6. If tests pass, upload to PyPI
+   python -m twine upload dist/*
+   ```
+
+### Version Numbering Guidelines for Updates
+- For bug fixes: increment the PATCH version (0.1.0 → 0.1.1)
+- For new features: increment the MINOR version (0.1.1 → 0.2.0)
+- For breaking changes: increment the MAJOR version (0.2.0 → 1.0.0)
+
 ## Common Issues and Solutions
 
-### Version Conflict
-If you get an error about version already existing:
-1. Update the version number in `pyproject.toml`
-2. Clean and rebuild the distribution
-3. Try uploading again
+### Version Conflict or 400 Bad Request
+If you get an error about version conflict or a 400 Bad Request:
+1. The version number in `pyproject.toml` has already been used
+2. You MUST increment the version number (you cannot reuse a version)
+3. Clean and rebuild the distribution
+4. Try uploading again with the new version
 
 ### Authentication Issues
 - Make sure you're using the correct API token
