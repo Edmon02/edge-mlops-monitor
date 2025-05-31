@@ -95,6 +95,19 @@ def predict(input_data):
 monitor.stop()
 ```
 
+## Interactive Demo
+
+Try out the Edge MLOps Monitor in Google Colab without needing any edge devices:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edmon02/edge-mlops-monitor/blob/main/examples/edge_mlops_demo.ipynb)
+
+The demo notebook includes:
+- Simple ML model simulation
+- Real-time system metrics monitoring
+- Model input/output logging
+- Drift detection visualization
+- Interactive plots and analysis
+
 ## Documentation
 
 For detailed documentation, please see:
